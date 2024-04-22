@@ -7,31 +7,59 @@
   <title>Philip Squire - A Portfolio Website</title>
 </head>
 <body class="bg-[#F1F2EE] w-auto font-['Inter']">
-  <header class="flex bg-[#63F77B] space-x-3 content-center text-[#435058]">
+  <header class="flex bg-[#63F77B] space-x-3 content-center text-[#435058] p-5">
     <div class="mx-auto flex space-x-7">
     <h1 class="text-5xl font-bold">
       Philip Squire - UX Researcher
     </h1>
     <div id="contacts" class="size-12 w-auto space-x-2 flex">
-      <img src="./images/email.png" alt="">
-      <img src="./images/phone.png" alt="">
-      <img src="./images/linkedin.png" alt="">
+      <a href="mailto:kpsquire@gmail.com"><img src="./images/email.png" alt="Email Icon with Link"></a>
+      <a href="tel:12486305728"><img src="./images/phone.png" alt="Phone Icon with Link"></a>
+      <a href="https://linkedin.com/in/philipdsquire"><img src="./images/linkedin.png" alt="LinkedIn Icon With Link"></a>
     </div>
     <div class="space-x-4 content-center">
       <nav class="flex text-xl font-bold space-x-5 border-[#435058]">
-        <ul>Home</ul>
-        <ul>Projects</ul>
+        <a href="/"><ul>Home</ul></a>
+        <a href="/Projects/"><ul>Projects</ul></a>
       </nav>
   </div>
 </div>
   </header>
-  <main class="w-auto content-center">
-      <img class = "mx-auto" src="./images/selfphoto.JPG" alt="Philip Squire Photo">
-      <div class="mx-auto w-1/2 bg-[#435058]">
+  <main class="w-auto content-center font-['Inter'] block">
+      <img class = "mx-auto p-12 rounded-full" src="./images/selfphoto.JPG" alt="Philip Squire Photo">
+      <div class="mx-auto w-1/2 bg-[#435058] rounded-3xl p-5 m-6">
         <p class="text-center font-['Helvetica Light'] text-5xl text-[#F1F2EE]">Philip Squire can help your business connect with your customers. 
           He gives you the insights you need, at a price you can afford. 
           His services include:</p>
       </div>
+      <div class="flex">
+      <div class="m-6 w-1/2 rounded-3xl bg-[#435058]">
+        <p class="text-center text-5xl text-[#F1F2EE] p-5">
+          Usability Testing</p>
+      </div>
+      <div class="m-6 w-1/2 rounded-3xl bg-[#435058]">
+        <p class="text-center text-5xl text-[#F1F2EE] p-5">Empathy Interviews</p>
+      </div>
+    </div>
+      
+    <div class="flex">
+      <div class="m-6 w-1/2 rounded-3xl bg-[#435058]">
+        <p class="text-center text-5xl text-[#F1F2EE] p-5">Heuristic Evaluation</p>
+          </div>
+          <div class="m-6 w-1/2 rounded-3xl bg-[#435058]">
+            <p class="text-center text-5xl text-[#F1F2EE] p-5">Surveys</p>
+            </div>
+    </div>
+    <div class="flex">
+            <div class="m-6 w-1/2 rounded-3xl bg-[#435058]">
+              <p class="text-center text-5xl text-[#F1F2EE] p-5">Data Analysis</p>
+            </div>
+            <div class="m-6 w-1/2 rounded-3xl bg-[#435058]">
+              <p class="text-center text-5xl text-[#F1F2EE] p-5">A/B Testing</p>
+            </div>
+          </div>
+      
+      
     </main>
 </body>
 </html>

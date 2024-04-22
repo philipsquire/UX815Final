@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <title>Philip Squire - A Portfolio Website</title>
+</head>
+<body class="bg-[#F1F2EE] w-auto font-['Inter']">
+  <header class="flex bg-[#63F77B] space-x-3 content-center text-[#435058] p-5">
+    <div class="mx-auto flex space-x-7">
+    <h1 class="text-5xl font-bold">
+      Philip Squire - UX Researcher
+    </h1>
+    <div id="contacts" class="size-12 w-auto space-x-2 flex">
+      <a href="mailto:kpsquire@gmail.com"><img src="./images/email.png" alt="Email Icon with Link"></a>
+      <a href="tel:12486305728"><img src="./images/phone.png" alt="Phone Icon with Link"></a>
+      <a href="https://linkedin.com/in/philipdsquire"><img src="./images/linkedin.png" alt="LinkedIn Icon With Link"></a>
+    </div>
+    <div class="space-x-4 content-center">
+      <nav class="flex text-xl font-bold space-x-5 border-[#435058]">
+        <a href="/"><ul>Home</ul></a>
+        <a href="/Projects/"><ul>Projects</ul></a>
+      </nav>
+  </div>
+</div>
+  </header>
+
+
+  <main class="w-1/2 text-[#435058] mx-auto p-6">
+  
+  
+
+    <div class="bg-[#63F77B] text-[#435058] rounded-t-xl" id="accordion-collapse" data-accordion="collapse">
+      <h2 id="accordion-collapse-heading-1">
+        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+          <span>IT Assistant Project</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+        <div class="p-5 border border-b-0 border-gray-200">
+          <h4>Overview</h4>
+    <p>For this project, I was responsible for gathering participants, programming, and creating the concept fot the prototype video. The objective was to create some sort of device that would assist IT workers and evaluate how it would perform in a real world scenario.</p>
+    <h4>Project Statement</h4>
+    <p>IT workers can have an overwhelming amount of work to accomplish, with a myriad of problems faced on a daily basis, especially problems such as power surges, data corruption, and other various networking issues.</p>
+    <h4>Methods</h4>
+    <p>I first tried gathering participants via Reddit, specifically via r/InformationTechnology, which was not successful. I then tried finding our particpants via various IT-centric Discord servers, from which I did find my participants. From there, participants were invited to a Zoom meeting, which was recorded. From there, my partner took additional notes.</p>
+    <p>During each interview, we asked the participant several questions about their opinion on robots and virtual assistants. We also asked each participant to draw their ideal device, and after the first participant, showed them our other participants’ ideas, and asked for their opinions on them.</p>
+    <h4>Findings</h4>
+    <p>In short, our participants all agreed that a humanoid or other type of social robot would not be beneficial. Rather, they chose more of a “smart” tool that can be programmed to the user’s satisfaction.</p>
+    <h4>Prototype</h4>
+    <img src="/images/prototype_sketch.png" alt="Sketch of Prototype">
+    <p>Click <a href="https://www.youtube.com/watch?v=aTixx6QpuCs" target="_blank">here</a> for a skit showing off the possibilities of our device.</p>
+    <p>Code for the prototype can be found <a href="https://github.com/philipsquire/mi349_final/blob/master/resources/codeforita.ino" target="_blank">here</a>.</p>
+    <h4>Evaluation</h4>
+    <p>Due to CoVID-19, we were unable to test our project in a real-world environment. Beyond that, due to the limitations of the Arduino hardware, we were not able to implement checking for electrical failures or packet loss in any capacity. We were able to fully implement temperature and humidity detection, thanks to the device that was included with our Arduino kit.</p>
+        </div>
+      </div>
+      <h2 id="accordion-collapse-heading-2">
+        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 bg-[#63F77B] gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+          <span>Persona</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+        <div class="p-5 border border-b-0 border-gray-200">
+          <p class="mb-2">Click <a href="https://onedrive.live.com/view.aspx?resid=CD30E3C54FCED25F%211437&authkey=!AL08mbgbJz5ezOU">here</a> to see my sample persona.</p>
+        </div>
+      </div>
+      <h2 id="accordion-collapse-heading-3">
+        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-gray-200 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+          <span>Snail Game</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+        <div class="p-5 border border-t-0 border-gray-200">
+          <p class="mb-2">Click <a href="philipsquire.com/games/snail/">here</a> to play an infinite runner starring a snail that I worked on (desktop only).</p>
+        </div>
+      </div>
+      <h2 id="accordion-collapse-heading-4">
+        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-gray-200 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+          <span>Heuristic Evaluation</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+        <div class="p-5 border border-t-0 border-gray-200">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">Click <a href="https://1drv.ms/b/s!Al_Szk_F4zDNgZtyBGqATu4ZkiXo1g">here to see a cognitive walkthrough and heuristic evaluation of the Signal app.</a></p>
+        </div>
+      </div>
+    </div>
+</main>    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+</html>
